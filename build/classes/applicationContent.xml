@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+	<bean id="userAction" class="com.mymusic.action.UserAction">
+	 <property name="userDao" ref="userDao"></property>
+	</bean>
+	
+	<bean id="audioAction" class="com.mymusic.action.AudioAction">
+	 <property name="audioDao" ref="audioDao"></property>
+	</bean>
+	
+	<bean id="sheetAction" class="com.mymusic.action.SheetAction">
+	 <property name="sheetDao" ref="sheetDao"></property>
+	</bean>
+	
+	<bean id="pictureAction" class="com.mymusic.action.PictureAction">
+	<property name="pictureDao" ref = "pictureDao"></property>
+	</bean>
+</beans>

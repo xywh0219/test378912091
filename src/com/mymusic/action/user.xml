@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+   
+	<package name="user" namespace="/user" extends="sys">
+    <action name="userAction" class="userAction">
+      <result name="success">/user/usermanage.jsp</result>
+      <result name="fail">/user/ufail.jsp</result>
+      <result name="userown">../usermain.jsp</result>
+      <result name="adminown">/user/adminown.jsp</result>
+    </action>
+	</package>
+	 
+ 
+</struts>
